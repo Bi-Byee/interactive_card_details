@@ -57,9 +57,8 @@
         <input
           type="number"
           name="cardnu"
-          id=""
+          id="cardnu"
           placeholder="e.g. 1234 5678 9123"
-          max="12"
         />
         <br />
         <div class="date_cvv">
@@ -67,28 +66,12 @@
           <input
             type="number"
             name="exp_month"
-            id=""
+            id="exp_date"
             placeholder="MM"
-            min="1"
-            max="2"
           />
-          <input
-            type="number"
-            name="exp_year"
-            id=""
-            placeholder="YY"
-            min="1"
-            max="2"
-          />
+          <input type="number" name="exp_year" placeholder="YY" maxlength="2" />
           <label for="cvv">CVV</label>
-          <input
-            type="number"
-            name="cvv"
-            id=""
-            placeholder="e.g. 123"
-            min="3"
-            max="3"
-          />
+          <input type="number" name="cvv" id="cvv" placeholder="e.g. 123" />
           <input type="submit" value="Confirm" />
         </div>
       </form>
