@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card">
+      <div class="card-back">
+        <img src="images/bg-card-back.png" alt="" />
+        <span>000</span>
+      </div>
+      <div class="card-front">
+        <img src="images/bg-card-front.png" alt="" />
+        <div class="card-details">
+          <img id="logo" src="images/card-logo.svg" alt="" />
+          <span>0000 0000 0000 0000</span>
+          <span>JANE APPLESEED</span>
+          <span>00/00</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-input">
+      <form action="" class="card-form">
+        <label for="cname">CARDHOLDER NAME</label>
+        <input
+          type="text"
+          id="cname"
+          name="cname"
+          placeholder="e.g.Jane Appleseed"
+        />
+        <br />
+        <label for="cardnu">CARD NUMBER</label>
+        <input
+          type="number"
+          name="cardnu"
+          id=""
+          placeholder="e.g. 1234 5678 9123  "
+        />
+        <br />
+        <div class="date_cvv">
+          <label for="exp_date">EXP. DATE(MM/YY)</label>
+          <input type="number" name="exp_month" id="" placeholder="MM" />
+          <input type="number" name="exp_year" id="" placeholder="YY" />
+          <label for="cvv">CVV</label>
+          <input type="number" name="cvv" id="" placeholder="e.g. 123" />
+          <input type="submit" value="Confirm" />
+        </div>
+      </form>
+    </section>
+    <!-- 0000 0000 0000 0000 Jane Appleseed 00/00 000 Cardholder Name e.g. Jane
+    Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
+    e.g. 123 Confirm
+
+    //Completed state start 
+
+    Thank you! We've added your card details Continue
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>

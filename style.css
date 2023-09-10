@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  background-image: url(images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  box-sizing: border-box;
+}
+.card-back img,
+.card-front img {
+  width: 70%;
+  height: 70%;
+  position: relative;
+}
+
+.card-back img {
+  padding-top: 10%;
+  transform: translateX(15%);
+  z-index: 0;
+}
+
+.card-front img {
+  transform: translate(-15%, -47%);
+  z-index: 1;
+}
+
+.card-back span {
+  position: absolute;
+  font-size: 11px;
+  color: white;
+  top: 30%;
+  left: 80%;
+}
+
+.card-details {
+  font-size: 10px;
+  font-weight: 300;
+  position: absolute;
+  text-align: left;
+  width: 60%;
+  top: 45%;
+  left: 10%;
+  display: grid;
+  color: white;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr;
+  z-index: 1;
+  column-gap: 5%;
+  row-gap: 20%;
+}
+.card-details span:nth-child(2) {
+  grid-area: 2/1/2/3;
+  font-size: 16px;
+  font-weight: 500;
+}
+.card-details span:nth-child(4) {
+  text-align: right;
+}
+
+#logo {
+  display: grid;
+  grid-area: 1/1/1/3;
+  width: 20%;
+  height: 80%;
+}
+
+.card-form {
+  position: absolute;
+  display: flex;
+  top: 95%;
+  letter-spacing: 2px;
+  padding-left: 5%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-size: 11px;
+  font-weight: bold;
+  color: hsl(278, 68%, 11%);
+}
+label {
+  margin-bottom: 2%;
+}
+input {
+  width: 85vw;
+  height: 6vh;
+  border: solid 2px hsl(270, 3%, 87%);
+  border-radius: 10px;
+  padding-left: 5%;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+.date_cvv {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto 1fr auto;
+  row-gap: 5%;
+  width: 102%;
+  height: 100%;
+}
+
+input[name="exp_month"],
+input[name="exp_year"] {
+  width: 15vw;
+}
+
+input[name="exp_month"] {
+  grid-area: 2/1/2/2;
+  padding-left: 25%;
+}
+input[name="exp_year"] {
+  position: relative;
+  padding-left: 10%;
+  margin-left: 15%;
+}
+
+label[for="exp_date"] {
+  grid-area: 1/1/1/3;
+}
+label[for="cvv"] {
+  grid-area: 1/3/1/4;
+}
+
+input[name="cvv"] {
+  width: 40vw;
+}
+
+input[type="submit"] {
+  margin-top: 3%;
+  width: 103%;
+  height: 150%;
+  font-size: 15px;
+  grid-area: 3/1/3/4;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+}
