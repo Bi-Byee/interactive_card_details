@@ -58,19 +58,42 @@
           type="number"
           name="cardnu"
           id=""
-          placeholder="e.g. 1234 5678 9123  "
+          placeholder="e.g. 1234 5678 9123"
+          max="12"
         />
         <br />
         <div class="date_cvv">
           <label for="exp_date">EXP. DATE(MM/YY)</label>
-          <input type="number" name="exp_month" id="" placeholder="MM" />
-          <input type="number" name="exp_year" id="" placeholder="YY" />
+          <input
+            type="number"
+            name="exp_month"
+            id=""
+            placeholder="MM"
+            min="1"
+            max="2"
+          />
+          <input
+            type="number"
+            name="exp_year"
+            id=""
+            placeholder="YY"
+            min="1"
+            max="2"
+          />
           <label for="cvv">CVV</label>
-          <input type="number" name="cvv" id="" placeholder="e.g. 123" />
+          <input
+            type="number"
+            name="cvv"
+            id=""
+            placeholder="e.g. 123"
+            min="3"
+            max="3"
+          />
           <input type="submit" value="Confirm" />
         </div>
       </form>
     </section>
+
     <!-- 0000 0000 0000 0000 Jane Appleseed 00/00 000 Cardholder Name e.g. Jane
     Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
     e.g. 123 Confirm
