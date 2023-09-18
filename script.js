@@ -105,7 +105,8 @@ cvv.addEventListener("input", function () {
   }
 });
 
-subm.addEventListener("click", function () {
+subm.addEventListener("click", function (event) {
+  event.preventDefault();
   forms.style.display = "none";
   thank.style.display = "flex";
 });
@@ -113,4 +114,6 @@ subm.addEventListener("click", function () {
 cont.addEventListener("click", function () {
   forms.style.display = "flex";
   thank.style.display = "none";
+
+  location.reload();
 });

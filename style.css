@@ -38,14 +38,14 @@ body {
 
 .card-back span {
   position: absolute;
-  font-size: 11px;
+  font-size: 12px;
   color: white;
   top: 30%;
   left: 80%;
 }
 
 .card-details {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 300;
   position: absolute;
   text-align: left;
@@ -69,7 +69,7 @@ body {
   text-align: right;
 }
 .date span:nth-child(2) {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 300;
 }
 
@@ -86,7 +86,7 @@ body {
   display: flex;
   left: 0%;
   top: 95%;
-  width: 90%;
+  width: 85%;
   letter-spacing: 2px;
   padding-left: 5%;
   flex-direction: column;
@@ -127,7 +127,7 @@ input::placeholder {
 
 input[name="exp_month"],
 input[name="exp_year"] {
-  width: 15vw;
+  width: 20vw;
 }
 
 input[name="exp_month"] {
@@ -158,6 +158,7 @@ input[type="submit"] {
   color: white;
   border-radius: 7px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 input:focus {
@@ -202,7 +203,7 @@ input:focus {
   padding-bottom: 5%;
 }
 
-.thank_you input[type="submit"] {
+.thank_you input[type="button"] {
   margin-top: 3%;
   width: 100%;
   height: 7vh;
@@ -211,13 +212,56 @@ input:focus {
   color: white;
   border-radius: 5px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  body {
+@media screen and (min-width: 356px) and (max-width: 425px) {
+  .card-back span {
+    font-size: 14px;
+  }
+
+  .card-details {
+    font-size: 13px;
+  }
+
+  .card-details span:nth-child(2) {
+    font-size: 18px;
+  }
+  .date span:nth-child(2) {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 569px) {
+  .card-back span {
+    font-size: 17px;
+  }
+
+  .card-details {
+    font-size: 16px;
+  }
+
+  .card-details span:nth-child(2) {
+    font-size: 21px;
+  }
+  .date span:nth-child(2) {
+    font-size: 16px;
+  }
+  #logo {
+    width: 25%;
+    height: 95%;
+    top: 10%;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 705px) {
+  .bg {
+    position: absolute;
     background-image: url(images/bg-main-desktop.png);
     background-repeat: no-repeat;
-    background-size: 40%;
+    width: 30%;
+    height: 100vh;
+    z-index: 0;
   }
 
   .card {
@@ -231,26 +275,34 @@ input:focus {
   }
 
   .card-back img {
-    transform: translate(-40%, 100%);
+    transform: translate(-60%, 120%);
   }
 
   .card-front img {
-    transform: translate(-60%, -60%);
+    transform: translate(-90%, -40%);
   }
 
   .card-back span {
-    font-size: 12px;
+    font-size: 11px;
     color: white;
-    top: 99%;
-    right: 51%;
+    top: 109%;
+    right: 56%;
     left: unset;
     z-index: 1;
   }
 
+  .card-details span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .date span:nth-child(2) {
+    font-size: 10px;
+  }
   .card-details {
+    font-size: 10px;
     width: 30%;
-    top: 47%;
-    left: 19%;
+    top: 52%;
+    left: 10%;
     row-gap: 10%;
   }
 
@@ -259,9 +311,9 @@ input:focus {
   }
   #logo {
     position: relative;
-    width: 25%;
-    height: 95%;
-    left: 15%;
+    width: 9vw;
+    height: 6vh;
+    left: 25%;
     top: 15%;
   }
 
@@ -307,16 +359,349 @@ input:focus {
     width: 100%;
   }
 
-  .thank_you input[type="submit"] {
+  .thank_you input[type="button"] {
     width: 120%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  body {
+@media screen and (min-width: 706px) and (max-width: 768px) {
+  .bg {
+    position: absolute;
     background-image: url(images/bg-main-desktop.png);
     background-repeat: no-repeat;
-    background-size: 26%;
+    width: 30%;
+    height: 100vh;
+    z-index: 0;
+  }
+
+  .card {
+    background-image: none;
+  }
+  .card-back img,
+  .card-front img {
+    width: 30%;
+    height: 40%;
+    z-index: 0;
+  }
+
+  .card-back img {
+    transform: translate(-60%, 120%);
+  }
+
+  .card-front img {
+    transform: translate(-90%, -40%);
+  }
+
+  .card-back span {
+    font-size: 12px;
+    color: white;
+    top: 110%;
+    right: 56%;
+    left: unset;
+    z-index: 1;
+  }
+
+  .card-details span:nth-child(2) {
+    font-size: 15px;
+  }
+
+  .date span:nth-child(2) {
+    font-size: 12px;
+  }
+  .card-details {
+    font-size: 12px;
+    width: 30%;
+    top: 52%;
+    left: 10%;
+    row-gap: 10%;
+  }
+
+  .date {
+    padding-right: 20%;
+  }
+  #logo {
+    position: relative;
+    width: 9vw;
+    height: 6vh;
+    left: 25%;
+    top: 15%;
+  }
+
+  .card-form {
+    top: 50%;
+    left: 50%;
+    width: 20%;
+  }
+
+  input {
+    width: 40vw;
+    height: 6vh;
+  }
+
+  .date_cvv {
+    column-gap: 13%;
+  }
+
+  input[name="exp_month"],
+  input[name="exp_year"] {
+    width: 10vw;
+  }
+
+  input[name="exp_month"] {
+    padding-left: 10%;
+  }
+
+  input[name="cvv"] {
+    width: 17vw;
+  }
+
+  input[type="submit"] {
+    margin-top: 7%;
+    width: 200%;
+  }
+
+  .end {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+  .thank_you {
+    width: 100%;
+  }
+
+  .thank_you input[type="button"] {
+    width: 120%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .bg {
+    position: absolute;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 100vh;
+    z-index: 0;
+  }
+
+  .card {
+    background-image: none;
+  }
+  .card-back img,
+  .card-front img {
+    width: 30%;
+    height: 40%;
+    z-index: 0;
+  }
+
+  .card-back img {
+    transform: translate(-60%, 120%);
+  }
+
+  .card-front img {
+    transform: translate(-90%, -40%);
+  }
+
+  .card-back span {
+    font-size: 14px;
+    color: white;
+    top: 111%;
+    right: 56%;
+    left: unset;
+    z-index: 1;
+  }
+
+  .card-details span:nth-child(2) {
+    font-size: 17px;
+  }
+
+  .date span:nth-child(2) {
+    font-size: 14px;
+  }
+  .card-details {
+    font-size: 14px;
+    width: 30%;
+    top: 52%;
+    left: 10%;
+    row-gap: 10%;
+  }
+
+  .date {
+    padding-right: 20%;
+  }
+  #logo {
+    position: relative;
+    width: 9vw;
+    height: 7vh;
+    left: 25%;
+    top: 15%;
+  }
+
+  .card-form {
+    top: 50%;
+    left: 50%;
+    width: 20%;
+  }
+
+  input {
+    width: 40vw;
+    height: 6vh;
+  }
+
+  .date_cvv {
+    column-gap: 13%;
+  }
+
+  input[name="exp_month"],
+  input[name="exp_year"] {
+    width: 10vw;
+  }
+
+  input[name="exp_month"] {
+    padding-left: 10%;
+  }
+
+  input[name="cvv"] {
+    width: 17vw;
+  }
+
+  input[type="submit"] {
+    margin-top: 7%;
+    width: 200%;
+  }
+
+  .end {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+  .thank_you {
+    width: 100%;
+  }
+
+  .thank_you input[type="button"] {
+    width: 120%;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1365px) {
+  .bg {
+    position: absolute;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 100vh;
+    z-index: 0;
+  }
+
+  .card {
+    background-image: none;
+  }
+  .card-back img,
+  .card-front img {
+    width: 30%;
+    height: 40%;
+    z-index: 0;
+  }
+
+  .card-back img {
+    transform: translate(-60%, 120%);
+  }
+
+  .card-front img {
+    transform: translate(-90%, -40%);
+  }
+
+  .card-back span {
+    font-size: 15px;
+    color: white;
+    top: 111%;
+    right: 56%;
+    left: unset;
+    z-index: 1;
+  }
+
+  .card-details span:nth-child(2) {
+    font-size: 22px;
+  }
+
+  .date span:nth-child(2) {
+    font-size: 17px;
+  }
+  .card-details {
+    font-size: 17px;
+    width: 30%;
+    top: 52%;
+    left: 10%;
+    row-gap: 10%;
+  }
+
+  .date {
+    padding-right: 20%;
+  }
+  #logo {
+    position: relative;
+    width: 9vw;
+    height: 7vh;
+    left: 25%;
+    top: 15%;
+  }
+
+  .card-form {
+    top: 50%;
+    left: 50%;
+    width: 20%;
+  }
+
+  input {
+    width: 40vw;
+    height: 6vh;
+  }
+
+  .date_cvv {
+    column-gap: 13%;
+  }
+
+  input[name="exp_month"],
+  input[name="exp_year"] {
+    width: 10vw;
+  }
+
+  input[name="exp_month"] {
+    padding-left: 10%;
+  }
+
+  input[name="cvv"] {
+    width: 17vw;
+  }
+
+  input[type="submit"] {
+    margin-top: 7%;
+    width: 200%;
+  }
+
+  .end {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+  .thank_you {
+    width: 100%;
+  }
+
+  .thank_you input[type="button"] {
+    width: 120%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .bg {
+    position: absolute;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 100vh;
+    z-index: 0;
   }
 
   .card {
@@ -426,7 +811,7 @@ input:focus {
     padding-bottom: 15%;
   }
 
-  .thank_you input[type="submit"] {
+  .thank_you input[type="button"] {
     width: 170%;
     font-size: 18px;
   }
